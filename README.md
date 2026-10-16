@@ -27,7 +27,7 @@ The project uses the [Polish Traffic Signs Dataset](https://www.kaggle.com/datas
 
 > **Dataset access:** Obtain the dataset from its provider and review
 > its terms of use. This repository does not claim ownership of the
-> original images or grant redistribution rights.
+> original images or grant redistribution rights. 
 
 ## Model architecture
 
