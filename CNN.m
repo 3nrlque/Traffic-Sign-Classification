@@ -14,17 +14,15 @@ numTrainFiles = 140;
 numValidationFiles = 30;
 
 % Split the dataset into training and temporary subsets
-[imdsTrain, imdsTemp] = splitEachLabel( ...
-    imds, numTrainFiles, 'randomize');
+[imdsTrain, imdsTemp] = splitEachLabel(imds, numTrainFiles, 'randomize');
 
 % Divide the remaining images into validation and test subsets
-[imdsValidation, imdsTest] = splitEachLabel( ...
-    imdsTemp, numValidationFiles, 'randomize');
+[imdsValidation, imdsTest] = splitEachLabel(imdsTemp, numValidationFiles, 'randomize');
 
 % Define the CNN architecture
 layers = [
     % Input layer for RGB images.
-    imageInputLayer([64 64 3])
+    imageInputLayer([16 16 3])
 
     % First convolutional block
     convolution2dLayer(3, 8, 'Padding', 'same')
