@@ -2,10 +2,8 @@
 
 ## Project overview
 
-The goal of this project is to build and evaluate an image-classification model that
-recognizes 15 classes of traffic signs. This type of system can
-serve as a learning prototype for traffic-sign recognition in
-driver-assistance systems and autonomous vehicles.
+The goal of this project was to build and evaluate an image-classification model that
+recognizes 15 classes of traffic signs.
 
 The project was developed using MATLAB and Deep Learning Toolbox
 functions.
@@ -53,19 +51,21 @@ followed by Softmax and a classification layer.
 
 The accompanying report compares the effects of the following factors:
 
--   **Image resolution:** 128 × 128, 64 × 64, 32 × 32, 16 × 16, and 8 × 8 pixels
--   **Network depth:** different numbers of convolutional blocks
--   **Optimization algorithm:** SGDM, Adam, and RMSProp
--   **Gaussian noise:** noise levels from 0% to 20%
+-   **Image resolution:** 128 × 128, 64 × 64, 32 × 32, 16 × 16, and 8 × 8 pixels,
+-   **Network depth:** different numbers of convolutional blocks,
+-   **Optimization algorithm:** SGDM, Adam, and RMSProp,
+-   **Gaussian noise:** noise levels from 0% to 20%,
 -   **Network depth under heavy noise:** comparison of model
-    configurations at 20% noise
+    configurations at 20% noise.
 
 These experiments explore the trade-off between classification
 performance, model complexity, and training time.
 
 ## Results
 
-The setup featuring three layers, RMSProp, and uncorrupted input images proved to be the top-performing model.
+The experiments demonstrate that the performance of a Convolutional Neural Network (CNN) for traffic sign classification depends on several factors, including input image resolution, network depth, optimization algorithm, and image noise.
+
+Based on the conducted experiments and the analysis of the obtained results, the most optimal neural network configuration was selected. This model consists of three layers and is trained using the RMSProp optimization algorithm on noise-free data. The selected optimal model met all project requirements, achieving high classification accuracy while maintaining computational and time efficiency.
 
 | Metric | result |
 | --- | --- |
