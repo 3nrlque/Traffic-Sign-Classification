@@ -63,7 +63,7 @@ performance, model complexity, and training time.
 
 ## Results
 
-The experiments demonstrate that the performance of a Convolutional Neural Network (CNN) for traffic sign classification depends on several factors, including input image resolution, network depth, optimization algorithm, and image noise.
+The experiments demonstrate that the performance of a Convolutional Neural Network (CNN) for traffic sign classification depends on several factors, including input image resolution, network depth, optimization algorithm, and image noise. Detailed results for each experimental configuration are available in the `Raport_końcowy.pdf` file.
 
 Based on the conducted experiments and the analysis of the obtained results, the most optimal neural network configuration was selected. This model consists of three layers and is trained using the RMSProp optimization algorithm on noise-free data. The selected optimal model met all project requirements, achieving high classification accuracy while maintaining computational and time efficiency.
 
